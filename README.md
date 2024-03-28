@@ -58,3 +58,7 @@ To lint the code with ESLint and Prettier:
 ```sh
 yarn lint:fix
 ```
+
+--
+
+do npm run dev to start server. 
