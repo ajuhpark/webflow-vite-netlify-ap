@@ -23,9 +23,9 @@
 }
 
 /* purple when it's local */
-body {
+/* body {
   background-color: #eeebfc;
-}
+} */
 
 /* green when it's in production */
 /* body {

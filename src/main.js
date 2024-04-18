@@ -7,6 +7,6 @@ import feature from './features/feature'
 console.log('Welcome to Vite + JS + Webflow!')
 console.log(gsap)
 
-// alert('Local')
+alert('Local')
 
 feature()
