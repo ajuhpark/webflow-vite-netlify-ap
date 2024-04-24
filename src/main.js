@@ -14,7 +14,8 @@ feature()
 var home_tl = gsap.timeline({ defaults: { ease: 'power1.inOut'} })
 /*autoAlpha below is for the Flash of Unstyled Content issue.*/
 home_tl
-  .from('Body', { backgroundColor: '#f7dcdc', opacity: 0, duration: 1.2 }, 'home_start')
+  .from("html", {opacity:0, duration:0.8, autoAlpha:0}, 'home_start')
+  .from('Body', { backgroundColor: '#f7dcdc', opacity: 0, duration: 1.2 }, '<')
   .from('.home_icon', { yPercent: 110, duration: 1 }, 'home_start+=.3')
   .from('.home_icon', { opacity: 0, duration: .8 }, 'home_start+=.6')
   .from('.home_icon_f1', { yPercent: 110, duration: 1 }, 'home_start+=.3')
@@ -27,3 +28,9 @@ home_tl
   .from('.home_position', { opacity: 0, duration: .9 }, 'home_start+=.4' )
   .from('.cs_component_container_1', { yPercent: 10, duration: 1.2 }, 'home_start+=.2' )
   .from('.cs_component_container_1', { opacity: 0, duration: 1.7 }, 'home_start+=.1' )
+
+//addressing the Flash of unstyled content issue.
+window.addEventListener("load", function(event) { 
+  init(); //do stuff
+  // GSDevTools.create({animation:tl})
+  });
