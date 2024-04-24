@@ -15,8 +15,8 @@ feature()
 var case_study_tl = gsap.timeline({ defaults: { ease: 'power1.inOut'} })
 case_study_tl
   //#f7f7f2 is light beige. #f7dcdc is light pink.
-  .from("html", {opacity:0, duration: 1, autoAlpha: 0, backgroundColor: '#f7f7f2'}, 'case_study_tl')
-  .from('.proj', { backgroundColor: '#f7f7f2', opacity: 0, duration: 0.8}, '<')
+  .from("html", {opacity:0, duration: 0, autoAlpha: 0}, 'case_study_tl')
+  .from('.proj', { backgroundColor: '#f7f7f2', opacity: 0, duration: 0.4}, '<')
   .from('.project_title', { yPercent: 60, duration: .9 }, 'case_study_tl+=.4')
   .from('.project_title', { opacity: 0, duration: .7 }, 'case_study_tl+=.4')
   .from('.project_hero_image', { yPercent: 20, duration: .8 }, 'case_study_tl+=.5')
