@@ -16,10 +16,10 @@ export default defineConfig({
     minify: true,
     manifest: true,
     rollupOptions: {
-      input: './src/main.js',
+      input: './src/case_study.js',
       output: {
         format: 'umd',
-        entryFileNames: 'main.js',
+        entryFileNames: 'case_study.js',
         esModule: false,
         compact: true,
         globals: {
