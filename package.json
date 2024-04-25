@@ -1,8 +1,18 @@
 {
   "name": "vite-javascript-webflow",
   "version": "0.0.1",
-  "author": "armandsalle <armand.salle@gmail.com>",
+  "author": "Andrew <ajuhpark@gmail.com>",
   "license": "MIT",
+  "files":["dist"],
+  "main":"./dist/webflow_js_library.umd.js",
+  "module":"./dist/webflow_js_library.es.js",
+
+  "exports": {
+    ".": {
+      "import": "./dist/webflow_js_library.es.js",
+      "require": "./dist/webflow_js_library.umd.js"
+    }
+  },
 
   "scripts": {
     "dev": "vite",

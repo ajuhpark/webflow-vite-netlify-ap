@@ -1,7 +1,19 @@
 
-import { defineConfig } from 'vite'
-import eslintPlugin from 'vite-plugin-eslint'
+const path = require('path')
+const { defineConfig } = require('vite')
 
+module.exports = defineConfig({
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, 'lib/main.js'),
+      name: 'webflow_js_library',
+      fileName: (format) => `webflow_js_library.${format}.js`
+    }
+  }
+});
+
+/* 
+// original vite.config.js code below
 // vite.config.js
 export default defineConfig({
   plugins: [eslintPlugin({ cache: false })],
@@ -31,3 +43,4 @@ export default defineConfig({
     },
   },
 })
+*/
