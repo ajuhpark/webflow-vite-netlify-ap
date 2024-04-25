@@ -16,16 +16,30 @@ export default defineConfig({
     minify: true,
     manifest: true,
     rollupOptions: {
-      input: './src/case_study.js',
-      output: {
+      input: {
+        main:'./src/main.js',
+        caseStudy:'./src/case_study.js'
+      },
+      output: [
+      {
+        format: 'umd',
+        entryFileNames: 'main.js',
+        esModule: false,
+        compact: true,
+        globals: {
+          jquery: '$',
+        }
+      },
+      { 
         format: 'umd',
         entryFileNames: 'case_study.js',
         esModule: false,
         compact: true,
         globals: {
           jquery: '$',
-        },
-      },
+        }
+      }
+    ],
       external: ['jquery'],
     },
   },
