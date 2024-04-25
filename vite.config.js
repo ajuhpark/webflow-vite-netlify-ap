@@ -1,7 +1,8 @@
+
 import { defineConfig } from 'vite'
 import eslintPlugin from 'vite-plugin-eslint'
 
-// 1.vite.config.js
+// vite.config.js
 export default defineConfig({
   plugins: [eslintPlugin({ cache: false })],
   server: {
@@ -16,30 +17,16 @@ export default defineConfig({
     minify: true,
     manifest: true,
     rollupOptions: {
-      input: {
-        main:'./src/main.js',
-        caseStudy:'./src/case_study.js'
-      },
-      output: [
-      {
+      input: './src/main.js',
+      output: {
         format: 'umd',
         entryFileNames: 'main.js',
         esModule: false,
         compact: true,
         globals: {
           jquery: '$',
-        }
+        },
       },
-      { 
-        format: 'umd',
-        entryFileNames: 'case_study.js',
-        esModule: false,
-        compact: true,
-        globals: {
-          jquery: '$',
-        }
-      }
-    ],
       external: ['jquery'],
     },
   },
