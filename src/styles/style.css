@@ -32,6 +32,3 @@
   background-color: #d2fcd2;
 } */
 
-/*addressing FUOC - flash of unstyled content*/
-html { opacity: 0; transition: opacity 0s ease-out; }
-html.webflow-loaded { opacity: 1; }
