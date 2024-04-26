@@ -8,7 +8,20 @@ module.exports = defineConfig({
       entry: path.resolve(__dirname, 'lib/main.js'),
       name: 'webflow_js_library',
       fileName: (format) => `webflow_js_library.${format}.js`
-    }
+    },
+    rollupOptions: {
+      input: 'lib/main.js',
+      output: {
+        format: 'umd',
+        entryFileNames: 'main.js',
+        esModule: false,
+        compact: true,
+        globals: {
+          jquery: '$',
+        },
+      },
+      external: ['jquery'],
+    },
   }
 });
 
