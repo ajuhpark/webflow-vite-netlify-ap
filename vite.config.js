@@ -5,7 +5,7 @@ const { defineConfig } = require('vite')
 module.exports = defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, './src/main.js'),
+      entry: path.resolve(__dirname, './lib/main.js'),
       name: 'webflow_js_library',
       fileName: (format) => `webflow_js_library.${format}.js`
     }
