@@ -62,3 +62,15 @@ yarn lint:fix
 --
 
 do npm run dev to start server. 
+
+--
+
+Tried building a library using this:
+Use Vite for JavaScript Libraries
+https://andrewwalpole.com/blog/use-vite-for-javascript-libraries/
+
+There's also a medium article on how to get multiple js working:
+Build multiple javascripts in Library Mode with vitejs
+https://medium.com/@tristan.wyl/build-multiple-javascripts-in-library-mode-with-vitejs-fc3fac4ea653
+
+
