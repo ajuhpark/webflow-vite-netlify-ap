@@ -1,4 +1,4 @@
-
+/*
 const path = require('path')
 const { defineConfig } = require('vite')
 
@@ -11,8 +11,8 @@ module.exports = defineConfig({
     }
   }
 });
-
-/* 
+*/
+ 
 // original vite.config.js code below
 // vite.config.js
 export default defineConfig({
@@ -43,4 +43,3 @@ export default defineConfig({
     },
   },
 })
-*/
