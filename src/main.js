@@ -1,8 +1,8 @@
 import '../src/styles/style.css'
 
-import homepage from './homepage.js'
+import homepage from '../lib/homepage.js'
 
-import case_study from './case_study'
+import case_study from '../lib/case_study.js'
 
 // import feature from './features/feature'
 
