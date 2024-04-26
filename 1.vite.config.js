@@ -14,10 +14,10 @@ module.exports = defineConfig({
     */
     // I put this back from the original webflow + vite.js file.
     rollupOptions: {
-      input: 'lib/homepage.js',
+      input: 'lib/case_study.js',
       output: {
         format: 'umd',
-        entryFileNames: 'homepage.js',
+        entryFileNames: 'case_study.js',
         esModule: false,
         compact: true,
         globals: {
