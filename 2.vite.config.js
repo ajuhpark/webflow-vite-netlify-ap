@@ -5,6 +5,14 @@ const { defineConfig } = require('vite')
 module.exports = defineConfig({
 
   build: {
+    server: {
+      host: 'localhost',
+      cors: '*',
+      hmr: {
+        host: 'localhost',
+        protocol: 'ws',
+      },
+    },
     // this building a library is from this website: https://andrewwalpole.com/blog/use-vite-for-javascript-libraries/
     /*
     lib: {
