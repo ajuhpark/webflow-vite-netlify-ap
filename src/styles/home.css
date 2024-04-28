@@ -5,7 +5,7 @@
 
 /* active state */
 .home-once-active {
-  transition: opacity 3s linear 3s;
+  transition: opacity 20s linear 3s;
 }
 
 /* ending state */
