@@ -3,6 +3,7 @@ const path = require('path')
 const { defineConfig } = require('vite')
 
 module.exports = defineConfig({
+
   build: {
     // this building a library is from this website: https://andrewwalpole.com/blog/use-vite-for-javascript-libraries/
     /*

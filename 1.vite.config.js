@@ -3,6 +3,13 @@ const path = require('path')
 const { defineConfig } = require('vite')
 
 module.exports = defineConfig({
+  server:{
+    hmr: {
+        host: 'localhost',
+        Port: 8011,
+    },
+  },
+  
   build: {
     // this building a library is from this website: https://andrewwalpole.com/blog/use-vite-for-javascript-libraries/
     /*
