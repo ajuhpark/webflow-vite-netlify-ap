@@ -1,18 +1,18 @@
-// 2.vite.config.js
+// 3.vite.config.js
 const path = require('path')
 const { defineConfig } = require('vite')
 
 module.exports = defineConfig({
-  server: {
-    host: 'localhost',
-    cors: '*',
-    hmr: {
-      host: 'localhost',
-      protocol: 'ws',
-    },
-  },
 
   build: {
+    server: {
+      host: 'localhost',
+      cors: '*',
+      hmr: {
+        host: 'localhost',
+        protocol: 'ws',
+      },
+    },
     // this building a library is from this website: https://andrewwalpole.com/blog/use-vite-for-javascript-libraries/
     /*
     lib: {
@@ -23,10 +23,10 @@ module.exports = defineConfig({
     */
     // I put this back from the original webflow + vite.js file.
     rollupOptions: {
-      input: 'lib/cs_website_builder_tools.js',
+      input: 'lib/case_study.js',
       output: {
         format: 'umd',
-        entryFileNames: 'cs_website_builder_tools.js',
+        entryFileNames: 'case_study.js',
         esModule: false,
         compact: true,
         globals: {
