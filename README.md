@@ -61,6 +61,8 @@ yarn lint:fix
 
 --
 
+npx vite build to build.
+
 do npm run dev to start server. 
 
 --

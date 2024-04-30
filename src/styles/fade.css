@@ -7,7 +7,7 @@
 
 /* active state */
 .fade-leave-active {
-  transition: opacity 10s linear;
+  transition: opacity 3s linear;
 }
 
 /* ending state */
@@ -24,7 +24,7 @@
 
 /* active state */
 .fade-enter-active {
-  transition: opacity 10s linear;
+  transition: opacity 3s linear;
 }
 
 /* ending state */
