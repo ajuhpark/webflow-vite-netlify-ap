@@ -1,4 +1,4 @@
-/* clip-path transition*/
+/* clip out container */
 
 /* starting state */
 .clip-leave{
@@ -7,7 +7,7 @@
 
 /* active state */
 .clip-leave-active {
-  transition: opacity 10s linear;
+  transition: opacity .5s linear;
 }
 
 /* ending state */
@@ -24,7 +24,7 @@
 
 /* active state */
 .clip-enter-active {
-  transition: opacity 10s linear;
+  transition: opacity .5s linear;
 }
 
 /* ending state */
