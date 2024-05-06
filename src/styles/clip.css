@@ -1,4 +1,6 @@
-/* clip out container */
+/* clip-path transition */
+
+/* When the page is leaving, we're animating the opacity. */
 
 /* starting state */
 .clip-leave{
@@ -7,7 +9,7 @@
 
 /* active state */
 .clip-leave-active {
-  transition: opacity .5s linear;
+  transition: opacity 3s linear;
 }
 
 /* ending state */
@@ -19,16 +21,20 @@
 
 /* starting state */
 .clip-enter{
-  opacity: 0;
+  clip-path: circle(0%);
 }
 
 /* active state */
+/* incoming page has to be position absolute and on top of prev page */
 .clip-enter-active {
-  transition: opacity .5s linear;
+  transition: all 3s linear;
+  position: absolute;
+  top: 0;
+  z-index: 2;
 }
 
 /* ending state */
 .clip-enter-to {
-  opacity: 1;
+  clip-path: circle(75%)
 }
 
