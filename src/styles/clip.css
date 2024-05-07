@@ -9,7 +9,7 @@
 
 /* active state */
 .clip-leave-active {
-  transition: opacity 3s linear;
+  transition: opacity 6s linear;
 }
 
 /* ending state */
@@ -27,10 +27,10 @@
 /* active state */
 /* incoming page has to be position absolute and on top of prev page */
 .clip-enter-active {
-  transition: all 3s linear;
+  transition: all 6s linear;
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 20;
 }
 
 /* ending state */

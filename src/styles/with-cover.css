@@ -1,0 +1,32 @@
+/* Transition with cover screen */
+
+/* we're animating the child of this class. 
+So first two classes are for the container.
+Last two classes are for the cover to move. 
+We tagged the child elements of the containers. */
+
+.with-cover-leave-active,
+.with-cover-enter-active,
+.with-cover-leave-active .transition_barba,
+.with-cover-enter-active .transition_barba {
+  transition: transform 0.5s ease-in
+}
+
+
+/* Cover in */
+.with-cover-leave .transition_barba {
+  transform: translateY(-100%);
+}
+
+.with-cover-leave-to .transition_barba {
+  transform: translateY(0);
+}
+
+/* Cover down */
+.with-cover-enter .transition_barba {
+  transform: translateY(0);
+}
+
+.with-cover-enter-to .transition_barba {
+  transform: translateY(100%)
+}
