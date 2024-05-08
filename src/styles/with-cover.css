@@ -7,26 +7,26 @@ We tagged the child elements of the containers. */
 
 .with-cover-leave-active,
 .with-cover-enter-active,
-.with-cover-leave-active .transition_barba,
-.with-cover-enter-active .transition_barba {
-  transition: transform 0.5s ease-in
+.with-cover-leave-active .transition,
+.with-cover-enter-active .transition {
+  transition: transform 4s var(--easing);
 }
 
 
 /* Cover in */
-.with-cover-leave .transition_barba {
+.with-cover-leave .transition {
   transform: translateY(-100%);
 }
 
-.with-cover-leave-to .transition_barba {
+.with-cover-leave-to .transition {
   transform: translateY(0);
 }
 
 /* Cover down */
-.with-cover-enter .transition_barba {
+.with-cover-enter .transition {
   transform: translateY(0);
 }
 
-.with-cover-enter-to .transition_barba {
-  transform: translateY(100%)
+.with-cover-enter-to .transition {
+  transform: translateY(100%);
 }
