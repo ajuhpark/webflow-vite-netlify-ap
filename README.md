@@ -117,3 +117,13 @@ window.addEventListener("load", function(event) {
   // GSDevTools.create({animation:tl})
   });
 
+
+--
+
+Previously I made a .npmrc file and put this in it
+
+//npm.greensock.com/:_authToken=ce690915-b140-4149-88f6-3ce3e5a3d98c
+@gsap:registry=https://npm.greensock.com/
+
+But I don't need it anymore because i just used the actual file and put it in webflow.
+
