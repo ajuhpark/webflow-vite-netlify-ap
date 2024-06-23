@@ -130,3 +130,6 @@ But I don't need it anymore because i just used the actual file and put it in we
 --
 
 test change before i delete yarn.lock.
+--
+
+maybe it was becauase i didn't merge the feature/gsap branch to the main. 
