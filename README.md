@@ -137,3 +137,7 @@ maybe it was becauase i didn't merge the feature/gsap branch to the main.
 --
 
 trying a diff version of yarn. 
+
+--
+
+for some reason other case_study.js file didn't build.
